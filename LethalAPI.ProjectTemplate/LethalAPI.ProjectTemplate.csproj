@@ -74,15 +74,15 @@
 
     <ItemGroup>
         <None Remove=".gitignore" />
-        <None Remove="LICENSE" />
+        <None Remove="LICENSE.txt" />
         <None Remove="Plugin.ruleset" />
-        <None Remove="README.md" Pack="true" PackagePath="$(PackageReadmeFile)" />
+        <None Remove="README.md" />
         <None Remove="stylecop.json" />
         <Content Include="../.editorconfig" Link="Resources/.editorconfig" />
         <Content Include="../.gitignore" Link="Resources/.gitignore" />
-        <Content Include="../LICENSE" Link="Resources/LICENSE" Pack="true" PackagePath="$(PackageLicenseFile)" />
+        <Content Include="../LICENSE.txt" Link="Resources/LICENSE.txt" Pack="true" PackagePath="$(PackageLicenseFile)" />
         <Content Include="../LethalAPI.ruleset" Link="Resources/LethalAPI.ruleset" />
-        <Content Include="../README.md" Link="Resources/README.md" />
+        <Content Include="../README.md" Link="Resources/README.md" Pack="true" PackagePath="$(PackageReadmeFile)" />
         <Content Include="../stylecop.json" Link="Resources/stylecop.json" />
         <Content Include="../LethalAPITemplateIcon.png" Pack="true" PackagePath="" Link="Resources/LethalAPITemplateIcon.png" />
         <AdditionalFiles Include="../stylecop.json" Link="Resources/stylecop.json" />
